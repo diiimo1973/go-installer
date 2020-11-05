@@ -1,12 +1,12 @@
-#!/usr/bin/env sh
+#!/usr/bin/env bash
 
 ## check and set required arg 1 version
-# if [[ -z "$1" ]]
-#   then
-#     echo "No version supplied"
-#     exit 1
-# fi
-VERSION=1.15.3
+if [[ -z "$1" ]]
+  then
+    echo "No version supplied"
+    exit 1
+fi
+VERSION=$1
 
 OS=linux
 ARCH=amd64
