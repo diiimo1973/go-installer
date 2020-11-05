@@ -1,4 +1,4 @@
-#!/usr/bin/env sh
+#!/usr/bin/env bash
 
 ## Install dev dependencies
 go get -v -u github.com/Clever/gitsem
