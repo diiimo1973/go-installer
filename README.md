@@ -11,23 +11,31 @@ GOROOT is optional, fix snap vscode bug
 
 In  ~/.profile (ubuntu)
 
-    $ export GOROOT=/usr/local/go >> ~/.profile 
-    $ export PATH=$PATH:$GOROOT/bin:$HOME/go/bin >> ~/.profile
-    $ source ~/.profile
+    $ echo 'export GOROOT=/usr/local/go' >> ~/.profile 
+    $ echo 'export PATH=$PATH:$GOROOT/bin:$HOME/go/bin' >> ~/.profile
+    $ echo source ~/.profile
 
 In  ~/.bash_profile (manjaro)
 
-    $ export GOROOT=/usr/local/go >> ~/.bash_profile 
-    $ export PATH=$PATH:$GOROOT/bin:$HOME/go/bin >> ~/.bash_profile
-    $ source ~/.bash_profile
+    $ echo 'export GOROOT=/usr/local/go' >> ~/.bash_profile 
+    $ echo 'export PATH=$PATH:$GOROOT/bin:$HOME/go/bin' >> ~/.bash_profile
+    $ echo source ~/.bash_profile
 
 In  ~/.zprofile (zsh)
 
-    $ export GOROOT=/usr/local/go >> ~/.zprofile
-    $ export PATH=$PATH:$GOROOT/bin:$HOME/go/bin >> ~/.zprofile
-    $ source ~/.zprofile
+    $ echo 'export GOROOT=/usr/local/go' >> ~/.zprofile
+    $ echo 'export PATH=$PATH:$GOROOT/bin:$HOME/go/bin' >> ~/.zprofile
+    $ echo source ~/.zprofile
+    
+Add private repos
+
+    $ go env -w GOPRIVATE=*.corp.example.com,rsc.io/private
 
 Install depends
 
     $ curl -o- https://raw.githubusercontent.com/diiimo2k20/go-installer/main/install.sh | bash
 
+Check 
+
+    $ go version
+    $ go env
