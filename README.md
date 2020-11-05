@@ -1,11 +1,12 @@
 # go-installer
 Install go in linux
 
-1. Install actual go version, change 1.15.3 to actual version 
+Install actual go version, change 1.15.3 to actual version 
     
     $ curl -o- https://raw.githubusercontent.com/diiimo2k20/go-installer/main/install.sh | sudo bash -s 1.15.3
 
-2. Add environment variables.
+Add environment variables.
+
 GOROOT is optional, fix snap vscode bug
 
 In  ~/.profile (ubuntu)
@@ -26,6 +27,7 @@ In  ~/.zprofile (zsh)
     $ export PATH=$PATH:$GOROOT/bin:$HOME/go/bin >> ~/.zprofile
     $ source ~/.zprofile
 
-3. Install depends
+Install depends
 
     $ curl -o- https://raw.githubusercontent.com/diiimo2k20/go-installer/main/install.sh | bash
+
