@@ -9,27 +9,27 @@ Add environment variables.
 
 GOROOT is optional, fix snap vscode bug
 
-In  ~/.profile (ubuntu)
+In  ~/.profile (ubuntu, popos)
 
-    $ echo 'export GOROOT=/usr/local/go' >> ~/.profile 
-    $ echo 'export PATH=$PATH:$GOROOT/bin:$HOME/go/bin' >> ~/.profile
+    $ echo 'export GOROOT="/usr/local/go"' >> ~/.profile 
+    $ echo 'export PATH="$PATH:/usr/local/go/bin:$HOME/go/bin"' >> ~/.profile
     $ echo source ~/.profile
 
 In  ~/.bash_profile (manjaro)
 
-    $ echo 'export GOROOT=/usr/local/go' >> ~/.bash_profile 
-    $ echo 'export PATH=$PATH:$GOROOT/bin:$HOME/go/bin' >> ~/.bash_profile
+    $ echo 'export GOROOT="/usr/local/go"' >> ~/.bash_profile 
+    $ echo 'export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin"' >> ~/.bash_profile
     $ echo source ~/.bash_profile
 
 In  ~/.zprofile (zsh)
 
-    $ echo 'export GOROOT=/usr/local/go' >> ~/.zprofile
-    $ echo 'export PATH=$PATH:$GOROOT/bin:$HOME/go/bin' >> ~/.zprofile
+    $ echo 'export GOROOT="/usr/local/go"' >> ~/.zprofile
+    $ echo 'export PATH="$PATH:/usr/local/go/bin:$HOME/go/bin"' >> ~/.zprofile
     $ echo source ~/.zprofile
     
 Add private repos
 
-    $ go env -w GOPRIVATE=*.corp.example.com,rsc.io/private
+    $ go env -w GOPRIVATE="*.corp.example.com,rsc.io/private"
 
 Install depends
 
