@@ -1,9 +1,9 @@
 # go-installer
 Install go in linux
 
-Install actual go version, change 1.15.5 to actual version 
+Install actual go version, change 1.16 to actual version 
     
-    $ curl -o- https://raw.githubusercontent.com/diiimo2k20/go-installer/main/install.sh | sudo bash -s 1.15.5
+    $ curl -o- https://raw.githubusercontent.com/diiimo2k20/go-installer/main/install.sh | sudo bash -s 1.16
 
 Add environment variables.
 
