@@ -34,7 +34,9 @@ Add private repos
 
 Install depends
 
-    $ curl -o- https://raw.githubusercontent.com/diiimo2k20/go-installer/main/install.sh | bash
+    $ go install github.com/golang/mock/mockgen@latest
+    $ go get -u github.com/go-task/task/v3/cmd/task
+    $ go get github.com/swaggo/swag/cmd/swag
 
 Check 
 
