@@ -14,19 +14,19 @@ In  ~/.profile (ubuntu, popos)
 
     $ echo 'export GOROOT="/usr/local/go"' >> ~/.profile 
     $ echo 'export PATH="$PATH:/usr/local/go/bin:$HOME/go/bin"' >> ~/.profile
-    $ echo source ~/.profile
+    $ source ~/.profile
 
 In  ~/.bash_profile (manjaro)
 
     $ echo 'export GOROOT="/usr/local/go"' >> ~/.bash_profile 
     $ echo 'export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin"' >> ~/.bash_profile
-    $ echo source ~/.bash_profile
+    $ source ~/.bash_profile
 
 In  ~/.zprofile (zsh)
 
     $ echo 'export GOROOT="/usr/local/go"' >> ~/.zprofile
     $ echo 'export PATH="$PATH:/usr/local/go/bin:$HOME/go/bin"' >> ~/.zprofile
-    $ echo source ~/.zprofile
+    $ source ~/.zprofile
     
 Add private repos
 
