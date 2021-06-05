@@ -19,7 +19,7 @@ In  ~/.profile (ubuntu, popos)
 In  ~/.bash_profile (manjaro)
 
     $ echo 'export GOROOT="/usr/local/go"' >> ~/.bash_profile 
-    $ echo 'export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin"' >> ~/.bash_profile
+    $ echo 'export PATH="$PATH:/usr/local/go/bin:$HOME/go/bin"' >> ~/.bash_profile
     $ source ~/.bash_profile
 
 In  ~/.zprofile (zsh)
